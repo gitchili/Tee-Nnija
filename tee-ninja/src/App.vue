@@ -15,7 +15,7 @@
     </v-navigation-drawer>
     <v-toolbar dark class="dark">
       <v-toolbar-side-icon
-        @click.stop="sideNav = !sideNav"
+        @click.native.stop="sideNav = !sideNav"
         class="hidden-sm-and-up "></v-toolbar-side-icon>
       <v-toolbar-title>
         <router-link to="/" tag="span" style="cursor: pointer">Tee-Ninja</router-link>
@@ -45,10 +45,10 @@
       return {
         sideNav: false,
         menuItems: [
-          { icon: 'shopping_cart', title: 'Shopping Kart', link: '/cart' },
-          { icon: 'create', title: 'List Design!', link: '/Design/new' },
-          { icon: 'person', title: 'Profile', link: '/profile' },
-          { icon: 'face', title: 'Sign up', link: '/signup' },
+          { icon: 'fab fa-opencart', title: 'Shopping Kart', link: '/cart' },
+          { icon: 'fab fa-angrycreative', title: 'List Design!', link: '/Design/new' },
+          { icon: 'fas fa-user-ninja', title: 'Profile', link: '/profile' },
+          { icon: 'fas fa-user-secret', title: 'Sign up', link: '/signup' },
           { icon: 'lock_open', title: 'Sign in', link: '/signin' }
         ]
       }
